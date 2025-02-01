@@ -7,18 +7,14 @@ import { ThemedView } from '@/components/ThemedView';
 import { Link } from 'expo-router';
 import { Text } from 'react-native';
 
+
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
+     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText className='font-thin text-lg my-10' type="title">Welcome to Mert's Expo</ThemedText>
+        <ThemedText className='font-thin my-10 font-rubikBold text-3xl' type="title">Welcome to Mert's Expo</ThemedText>
         <HelloWave />
       </ThemedView>
 
